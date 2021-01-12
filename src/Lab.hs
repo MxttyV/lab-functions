@@ -13,43 +13,43 @@ module Lab where
 import Prelude hiding (not, and, max)
 
 --------------------------------------------------------------------------------
-
 -- 0. Define `age` to be your age.
 
-age = 29
-
+age = 19
 -- 1. Define `name` to be your name.
 
-name = "Michael"
+name = "Matt"
 
 -- 2. Modify the definition of `triple` so that it triples its argument.
 
-triple = \x -> x * 2
+triple = \x -> x * 3
 
 -- 3. Replace `undefined` in the definition of `tripleV2` below so that
 -- it behaves like `triple` above, but uses the syntactic sugar for
 -- lambda terms instead.
 
-tripleV2 x = undefined
+tripleV2 x = x*3
 
 -- 4. Replace `undefined` in the definition of `not` below to implement
 -- boolean negation.
 
-not = undefined
+not = \x -> case x of
+    True -> False 
+    False -> True
 
 -- 5. Replace `undefined` in the definition of `and` below to implement
 -- boolean conjunction.
 
-and = undefined
+and = \x -> \y -> x&&y
 
 -- 6. Replace `undefined` in the definition of `max` below so that it reduces
 -- to the greater number of `x` and `y`.
 
-max x y = undefined
+max x y = if x > y then x else y
 
 -- 7. Replace `undefined` in the definition of `perimeterRect` so that it
 -- calculates the perimeter of a rectangle given its length and width.
 
-perimeterRect l w = undefined
+perimeterRect l w = (l * 2) + (w * 2)
 
 --------------------------------------------------------------------------------
